@@ -27,10 +27,9 @@ CREATE DATABASE uvv
 
 COMMENT ON DATABASE uvv IS 'Esse banco de dados é utilizado para salvar as informações das lojas da uvv.';
 
---Essa linha faz o login no usuario
+--Essa linha conecta o usuário ao banco de dados.
 
 \c postgres://pedrolopes:7432eb146e77b7df0c4b01cd936d36fa@localhost/uvv
-
 
 --Essa linha cria o schema.
 
@@ -293,8 +292,7 @@ ON UPDATE NO ACTION
 NOT DEFERRABLE;
 
 
-
---Check constraints tabela produtos.
+/*Check constraints tabela produtos.*/
 
 alter table lojas.produtos
 add constraint cc_produtos_preco_unitario
@@ -304,7 +302,7 @@ alter table lojas.produtos
 add constraint cc_produtos_produto_id
 check ( produto_id >= 0 );
 
---Check constraints tabela lojas.
+/*Check constraints tabela lojas.*/
 
 alter table lojas.lojas
 add constraint cc_lojas_loja_id
@@ -323,7 +321,7 @@ alter table lojas.lojas
 add constraint cc_lojas_endereco_fisico_null
 check ((endereco_fisico IS NOT NULL AND endereco_web IS NULL));
 
---Check constraints tabela estoques.
+/*Check constraints tabela estoques.*/
 
 alter table lojas.estoques
 add constraint cc_lojas_estoque_id
@@ -341,7 +339,7 @@ alter table lojas.estoques
 add constraint cc_lojas_quantidade
 check ( quantidade >= 0 );
 
---Check constraints tabela clientes.
+/*Check constraints tabela clientes.*/
 
 alter table lojas.clientes
 add constraint cc_lojas_cliente_id
@@ -352,7 +350,7 @@ add constraint cc_lojas_email
 check (email ~ '^[A-Za-z0-9._+%-]+@[A-Za-z0-9.-]+[.][A-Za-z]+$'); 
 --Regex retirado do Stack OverFlow (https://stackoverflow.com/questions/42522442/how-to-validate-a-url-via-a-check-constraint-in-postgres).
 
---Check constraints tabela envios.
+/*Check constraints tabela envios.*/
 
 alter table lojas.envios
 add constraint cc_lojas_envio_id
@@ -370,7 +368,7 @@ alter table lojas.envios
 add constraint cc_lojas_status
 check (status IN ('CRIADO', 'ENVIADO', 'TRANSITO', 'ENTREGUE'));
 
---Check constraints tabela pedidos.
+/*Check constraints tabela pedidos.*/
 
 alter table lojas.pedidos
 add constraint cc_lojas_pedido_id
@@ -388,7 +386,7 @@ alter table lojas.pedidos
 add constraint cc_lojas_FK_pedidos_loja_id
 check ( FK_pedidos_loja_id >= 0 );
 
---Check constraints tabela pedidos_itens.
+/*Check constraints tabela pedidos_itens.*/
 
 alter table lojas.pedidos_itens
 add constraint cc_lojas_PFK_pedido_id
