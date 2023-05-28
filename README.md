@@ -29,4 +29,4 @@ Então, através do software **SQL Power Architect**, foi gerado o script global
 
 # Conclusão
 
-Assim chega então ao final o PSET1! Se mostrando verdadeiramente desafiador, porém com certeza muito útil para aprimorar os meus conhecimentos sobre bancos de dados no geral, incentivando a pesquisa individual. É com prazer que posso dizer que o PSET me fez um estudante e profissional mais preparado para lidar com os possíveis desafios dentro do mercado de trabalho e no contexto acadêmico.
+Assim chega então ao final o PSET1! Se mostrando verdadeiramente desafiador, porém com certeza muito útil para aprimorar os meus conhecimentos sobre bancos de dados no geral, incentivando a pesquisa individual e a persistência. É com prazer que posso dizer que o PSET me fez um estudante e profissional mais preparado para lidar com os possíveis desafios dentro do mercado de trabalho e no contexto acadêmico.
