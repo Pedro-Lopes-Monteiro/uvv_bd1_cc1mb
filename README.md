@@ -20,6 +20,12 @@ Esse pset proposto a turma do primeiro período de Ciência da Computação, tev
 
 Alguns objetivos do PSET são, adquirir conhecimento sobre Git e Github e sistemas de controle de versões no geral, aprender Markdown, praticar a implementação de um projeto lógico utilizando o PostgreSQL e aprimorar as habilidades de pesquisa e resolução de problemas.
 
+## Ferramentas utilizadas
+
+- SQL Power Architect
+- Dbeaver
+- VS Code
+
 ## Projeto Lógico
 
 Utilizamos o mesmo projeto lógico de banco de dados que foi utilizado na primeira prova (podendo ser visto dentro do diretório "pset1" desde mesmo repositório, com o nome de cc1mb_202306237_postgresql.pdf).
