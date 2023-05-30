@@ -8,6 +8,8 @@
 
 **Monitor(a):** Suellen Miranda Amorim
 
+**Turma:** CC1MB
+
 ## Conceito do PSET
 
 Um "pset" é uma abreviação para "problem set", que é uma tarefa ou conjunto de problemas atribuídos aos estudantes em cursos de graduação ou pós-graduação. Os psets são projetados para fornecer aos estudantes a oportunidade de aplicar e aprofundar o conhecimento adquirido em sala de aula, além de desenvolver habilidades de resolução de problemas.
